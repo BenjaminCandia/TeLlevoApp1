@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>restablecer</ion-title>
+    <ion-buttons >
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input labelPlacement="floating" value="">
+      <div slot="label">Usuario <ion-text color="danger">*</ion-text></div>
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input   type="password" labelPlacement="floating" value="">
+      <div slot="label"> Nueva Contraseña <ion-text color="danger">*</ion-text></div>
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input  type="password" labelPlacement="floating" value="">
+      <div slot="label">Repetir Contraseña <ion-text color="danger">*</ion-text></div>
+    </ion-input>
+  </ion-item>
+
+  <ion-button class="botonRegis" (click)="restablecer()">Registrarse</ion-button>
+  
+</ion-content>
